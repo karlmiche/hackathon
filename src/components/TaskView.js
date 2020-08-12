@@ -37,7 +37,6 @@ const TaskView = () => {
                 <Checkbox />
                 <Checkbox />
                 <Checkbox />
-
                 <Button 
                 variant="contained" 
                 color="primary" 
