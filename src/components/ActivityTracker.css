@@ -1,0 +1,30 @@
+.papaDiv {
+  display: grid;
+  grid-template-rows: 250px 250px 250px; 
+  grid-template-columns: 250px 250px 250px;
+  margin: 200px;
+}
+
+.circle1Div {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.circle2Div {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.circle3Div {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.circle4Div {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.circleImg:hover {
+  width: 100%;
+}
