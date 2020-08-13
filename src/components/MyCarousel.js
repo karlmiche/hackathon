@@ -141,7 +141,7 @@ function SwipeableTextMobileStepper() {
           </Button>
         }
       />
-      <Button className={classes.startBtn}><Link className="link" to="/tasks">Let's get started!</Link></Button>
+      <Button className={classes.startBtn}><Link className="link" to="/activityTracker">Let's get started!</Link></Button>
     </div>
   );
 }
