@@ -5,7 +5,8 @@ import Button from '@material-ui/core/Button';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import Card from '@material-ui/core/Card';
 import { makeStyles } from '@material-ui/core/styles';
-import Checkbox from './CheckBox';
+import PictureOptions from './PictureOptions';
+
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -16,6 +17,10 @@ const useStyles = makeStyles((theme) => ({
       textAlign: 'center',
       color: theme.palette.text.secondary,
     },
+    anya: {
+        textAlign: "left",
+        marginLeft: "100px"
+    }
   }));
 
 const TaskView = () => {
@@ -25,29 +30,33 @@ const TaskView = () => {
     return (
         <div className={classes.root}>
             <Grid container spacing={3}>
+                <Grid item xs={12}></Grid>
+                <Grid item xs={8}></Grid>
+                <Typography className={classes.anya} variant="h5">Good Afternoon, Dr. Anya. Your patient Charlie is here to see you. First, let’s get ready to take care of Charlie.</Typography>
+                <Grid item xs={12}></Grid>
                 <Grid item xs={6}>
+                    <Typography variant="h5">Task 1: Charlie has a broken leg. What should you put in your doctor’s bag?</Typography>
                     <Card className={classes.paper}>
-                        <img src="http://placekitten.com/400/400"></img>
+                        <img src="./doctor.png">
+                        </img>
+                        <div>
+                            <h6>Content</h6>
+                            <p>Content paragraph</p>
+                        </div>
                     </Card>
                 </Grid>
+                {/* <Typography variant="h5">Check off tasks to mark your progress!</Typography> */}
                 <Grid item xs={6}>
-                    <Typography variant="h4">Lorem Impsum</Typography>
-                <Checkbox />
-                <Checkbox />
-                <Checkbox />
-                <Checkbox />
-                <Checkbox />
-                <Button 
-                variant="contained" 
-                color="primary" 
-                >
-                <Link 
-                className='link' to='/home'>Check Your Progress</Link>
-                </Button>
+                    <PictureOptions />
+                    <Button 
+                        variant="contained" 
+                        color="secondary" 
+                        >
+                        <Link 
+                        className='link' to='/home'>Take Care of Patient</Link>
+                    </Button>
                 </Grid>
             </Grid>
-            
-
         </div>
     );
 };

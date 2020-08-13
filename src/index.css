@@ -16,3 +16,12 @@ code {
   text-decoration: none;
   color: white;
 }
+
+/* .options-row {
+  height: 10vw;
+}  */
+
+.option {
+  width: 70px;
+  height: 70px;
+}
