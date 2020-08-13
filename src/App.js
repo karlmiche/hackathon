@@ -16,8 +16,8 @@ function App() {
     <div className="App">
       <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Route exact path='/' component={Home} />
       <Appbar />
+      <Route exact path='/' component={Home} />
       <Route path='/activityTracker' component={ActivityTracker} />
       <Route exact path='/tasks' component={TaskView} />
       <Route exact path="/carousel" component={MyCarousel} />
