@@ -19,6 +19,10 @@ const useStyles = makeStyles((theme) => ({
     },
     anya: {
         textAlign: "left",
+        textEmphasis: ""
+    },
+    bigBoy: {
+        textAlign: "center",
         marginLeft: "100px"
     }
   }));
@@ -29,12 +33,12 @@ const TaskView = () => {
 
     return (
         <div className={classes.root}>
-            <Grid container spacing={3}>
+            <Grid className={classes.bigBoy} container spacing={3}>
                 <Grid item xs={12}></Grid>
                 <Grid item xs={8}></Grid>
                 <Typography className={classes.anya} variant="h5">Good Afternoon, Dr. Anya. Your patient Charlie is here to see you. First, let’s get ready to take care of Charlie.</Typography>
                 <Grid item xs={12}></Grid>
-                <Grid item xs={6}>
+                <Grid item xs={4}>
                     <Typography variant="h5">Task 1: Charlie has a broken leg. What should you put in your doctor’s bag?</Typography>
                     <Card className={classes.paper}>
                         <img src="./doctor.png">
