@@ -10,6 +10,7 @@ import Section3 from './ClockIcons/Section3'
 import Section4 from './ClockIcons/Section4'
 import Section5 from './ClockIcons/Section5'
 
+
 export default function ActivityTracker(props) {
   
   const [redirectToTasks, setRedirectToTasks] = useState(false)
@@ -25,15 +26,15 @@ export default function ActivityTracker(props) {
   }
   return (
     <div>
-      <h1>My Schedule</h1>
+      <h1 className='h1'>My Schedule</h1>
     <div className="papaDiv">
-      <div className='clock' onClick={handleClick}>
+      <div className='clock' >
         <Clock  />
       </div>
      <div className='clockOverlay'>
        <ClockOverlay />
      </div>
-     <div className='section1'>
+     <div className='section1' onClick={handleClick}>
        <Section1 />
      </div>
      <div className='section2'>
@@ -50,6 +51,21 @@ export default function ActivityTracker(props) {
      </div>
      <div className='doctorDiv'>
        <img src='./DoctorFemale.png' />
+     </div>
+     <div className='bag'>
+       <img src='./bag1.png' />
+     </div>
+     <div className='bandage'>
+      <img src='./bandaid1.png' />
+     </div>
+     <div className='needle'>
+      <img src='./Needle.png' />
+     </div>
+     <div className='pills'>
+      <img src='./pills1.png' />
+     </div>
+     <div className='steth'>
+      <img src='./Steth.png' />
      </div>
     </div>
     </div>
