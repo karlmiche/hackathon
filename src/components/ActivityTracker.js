@@ -1,7 +1,10 @@
 import React from 'react'
 import './ActivityTracker.css'
+import Button from '@material-ui/core/Button';
+import {BrowserRouter as Router, Route, Link, Redirect} from 'react-router-dom';
 
 export default function ActivityTracker() {
+  
   return (
     <div className="papaDiv">
       <div className="circle1Div">
@@ -16,6 +19,13 @@ export default function ActivityTracker() {
       <div className="circle4Div">
         <img className="circleImg" src="./circle4.png" alt="fourth progress bar" />
       </div>
+      <Button
+        variant="contained"
+        color="primary"
+        >
+        <Link
+        className='link' to='/tasks'>Check Your Progress</Link>
+        </Button>
     </div>
   )
 }
