@@ -19,7 +19,7 @@ const TEXTS = [
   "Nurse",
   "Police",
   "Scientist",
-  "Teacher"
+  "Teacher",
 ];
 
 
