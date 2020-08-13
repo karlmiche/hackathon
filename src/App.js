@@ -5,15 +5,21 @@ import Home from './components/Home';
 import ActivityTracker from './components/ActivityTracker'
 import TaskView from './components/TaskView'
 import MyCarousel from './components/MyCarousel'
+import theme from './theme'
+import { CssBaseline } from '@material-ui/core';
+import { ThemeProvider } from '@material-ui/core/styles';
 
 
 function App() {
   return (
     <div className="App">
-      <Route exact path='/home' component={Home} />
+      <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <Route exact path='/' component={Home} />
       <Route path='/activityTracker' component={ActivityTracker} />
       <Route exact path='/tasks' component={TaskView} />
       <Route exact path="/carousel" component={MyCarousel} />
+      </ThemeProvider>
     </div>
   );
 }

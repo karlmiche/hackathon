@@ -14,6 +14,7 @@ const useStyles = makeStyles((theme) => ({
   },
   menuButton: {
     marginRight: theme.spacing(2),
+
   },
   title: {
     flexGrow: 1,
@@ -31,6 +32,7 @@ return (
         <Toolbar>
           <IconButton edge="start" className={classes.menuButton} color="primary" aria-label="menu">
             <MenuIcon />
+            <img src="./logo.png"></img>
           </IconButton>
           <Typography variant="h6" className={classes.title}>
             
