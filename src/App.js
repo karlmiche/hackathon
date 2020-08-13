@@ -20,7 +20,7 @@ function App() {
       <Route exact path='/' component={Home} />
       <Route path='/activityTracker' component={ActivityTracker} />
       <Route exact path='/tasks' component={TaskView} />
-      <Route exact path="/carousel" component={MyCarousel} />
+      <Route exact path="/explore" component={MyCarousel} />
       </ThemeProvider>
     </div>
   );

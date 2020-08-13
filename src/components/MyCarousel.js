@@ -74,6 +74,16 @@ const useStyles = makeStyles((theme) => ({
     overflow: 'hidden',
     width: '100%',
   },
+  startBtn: {
+    marginTop: "7vw",
+    backgroundColor: "#00B4EB",
+    fontFamily: "Montserrat",
+    color: "white",
+    textDecoration: "none",
+    borderRadius: "25px",
+    height: "4vw",
+    width: "27vw",
+},
 }));
 
 function SwipeableTextMobileStepper() {
@@ -131,6 +141,7 @@ function SwipeableTextMobileStepper() {
           </Button>
         }
       />
+      <Button className={classes.startBtn}><Link className="link" to="/tasks">Let's get started!</Link></Button>
     </div>
   );
 }
