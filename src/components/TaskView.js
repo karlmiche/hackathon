@@ -19,11 +19,20 @@ const useStyles = makeStyles((theme) => ({
     },
     anya: {
         textAlign: "left",
-        textEmphasis: ""
+        textEmphasis: "bold",
+        width: "80vw",
+        marginTop: "5vw"
     },
     bigBoy: {
         textAlign: "center",
         marginLeft: "100px"
+    },
+    patientBtn: {
+        marginTop: "7vw"
+    },
+    caption: {
+        textAlign: "left",
+        marginBottom: "2vw"
     }
   }));
 
@@ -39,7 +48,7 @@ const TaskView = () => {
                 <Typography className={classes.anya} variant="h5">Good Afternoon, Dr. Anya. Your patient Charlie is here to see you. First, let’s get ready to take care of Charlie.</Typography>
                 <Grid item xs={12}></Grid>
                 <Grid item xs={4}>
-                    <Typography variant="h5">Task 1: Charlie has a broken leg. What should you put in your doctor’s bag?</Typography>
+                    <Typography className={classes.caption} variant="h5">Task 1: Charlie has a broken leg. What should you put in your doctor’s bag?</Typography>
                     <Card className={classes.paper}>
                         <img src="./doctor.png">
                         </img>
@@ -50,9 +59,11 @@ const TaskView = () => {
                     </Card>
                 </Grid>
                 {/* <Typography variant="h5">Check off tasks to mark your progress!</Typography> */}
-                <Grid item xs={6}>
+                <Grid item xs={5}>
                     <PictureOptions />
-                    <Button 
+                </Grid>
+                <Grid item xs={6}>
+                <Button 
                         variant="contained" 
                         color="secondary" 
                         >
