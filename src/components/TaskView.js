@@ -19,7 +19,34 @@ const useStyles = makeStyles((theme) => ({
     },
     anya: {
         textAlign: "left",
+        textEmphasis: "bold",
+        width: "80vw",
+        marginTop: "5vw",
+        fontFamily: "Montserrat"
+    },
+    bigBoy: {
+        textAlign: "center",
         marginLeft: "100px"
+    },
+    patientBtn: {
+        marginTop: "7vw",
+        backgroundColor: "#00B4EB",
+        fontFamily: "Montserrat",
+        color: "white",
+        textDecoration: "none",
+        borderRadius: "25px",
+        height: "4vw",
+        width: "27vw",
+
+    },
+    doctor: {
+        height: "30vw",
+        width: "auto"
+    },
+    caption: {
+        textAlign: "left",
+        marginBottom: "2vw",
+        fontFamily: "Montserrat"
     }
   }));
 
@@ -29,31 +56,28 @@ const TaskView = () => {
 
     return (
         <div className={classes.root}>
-            <Grid container spacing={3}>
+            <Grid className={classes.bigBoy} container spacing={3}>
                 <Grid item xs={12}></Grid>
                 <Grid item xs={8}></Grid>
                 <Typography className={classes.anya} variant="h5">Good Afternoon, Dr. Anya. Your patient Charlie is here to see you. First, let’s get ready to take care of Charlie.</Typography>
                 <Grid item xs={12}></Grid>
-                <Grid item xs={6}>
-                    <Typography variant="h5">Task 1: Charlie has a broken leg. What should you put in your doctor’s bag?</Typography>
+                <Grid item xs={4}>
+                    <Typography className={classes.caption} variant="h5">Task 1: Charlie has a broken leg. What should you put in your doctor’s bag?</Typography>
                     <Card className={classes.paper}>
-                        <img src="./doctor.png">
+                        <img className={classes.doctor} src="./doctor.png">
                         </img>
                         <div>
-                            <h6>Content</h6>
-                            <p>Content paragraph</p>
+                            <h3>Dr. Anya</h3>
+                            <p>Dr. Anya is hard at work fixing bumps and bruises!</p>
                         </div>
                     </Card>
                 </Grid>
                 {/* <Typography variant="h5">Check off tasks to mark your progress!</Typography> */}
-                <Grid item xs={6}>
+                <Grid item xs={5}>
                     <PictureOptions />
-                    <Button 
-                        variant="contained" 
-                        color="secondary" 
-                        >
+                    <Button>
                         <Link 
-                        className='link' to='/home'>Take Care of Patient</Link>
+                        className={classes.patientBtn} to='/home'>Take Care of Patient</Link>
                     </Button>
                 </Grid>
             </Grid>

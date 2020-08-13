@@ -40,8 +40,6 @@ const classes = useStyles()
 
     return (
         <div>
-            <Appbar />
-
             <Grid container spacing={12} className={classes.title}>
                 <Grid item></Grid>
                 <Grid item xs={6}>

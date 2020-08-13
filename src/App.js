@@ -8,6 +8,7 @@ import MyCarousel from './components/MyCarousel'
 import theme from './theme'
 import { CssBaseline } from '@material-ui/core';
 import { ThemeProvider } from '@material-ui/core/styles';
+import Appbar from './components/Appbar';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <ThemeProvider theme={theme}>
       <CssBaseline />
       <Route exact path='/' component={Home} />
+      <Appbar />
       <Route path='/activityTracker' component={ActivityTracker} />
       <Route exact path='/tasks' component={TaskView} />
       <Route exact path="/carousel" component={MyCarousel} />

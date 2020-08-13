@@ -17,7 +17,7 @@ const PictureOptions = () => {
                 <FormControlLabel
                     control={<Checkbox 
                     name="checkedA" />}
-                    label="Secondary"
+                    label="Bandages"
                 />
                 </div>
                 <div className="bone">
@@ -25,7 +25,7 @@ const PictureOptions = () => {
                 <FormControlLabel
                     control={<Checkbox 
                     name="checkedA" />}
-                    label="Secondary"
+                    label="Human Bone"
                 />
                 </div>
                 <div className="drug">
@@ -33,7 +33,7 @@ const PictureOptions = () => {
                 <FormControlLabel
                     control={<Checkbox 
                     name="checkedA" />}
-                    label="Secondary"
+                    label="NSAIDs"
                 />
                 </div>
                 <div className="drug-two">
@@ -41,7 +41,7 @@ const PictureOptions = () => {
                 <FormControlLabel
                     control={<Checkbox 
                     name="checkedA" />}
-                    label="Secondary"
+                    label="Antacids"
                 />
                 </div>
             </div>
@@ -52,28 +52,28 @@ const PictureOptions = () => {
                 <FormControlLabel
                     control={<Checkbox 
                     name="checkedA" />}
-                    label="Secondary"
+                    label="Stethoscope"
                 />
                 </div><div>
                     <img className="option" src='./sticky.png' />
                 <FormControlLabel
                     control={<Checkbox 
                     name="checkedA" />}
-                    label="Secondary"
+                    label="Syringe"
                 />
                 </div><div>
                     <img className="option" src='./stickys.png' />
                 <FormControlLabel
                     control={<Checkbox 
                     name="checkedA" />}
-                    label="Secondary"
+                    label="Two syringes"
                 />
                 </div><div>
                     <img className="option" src='./tablet pil_2.png' />
                 <FormControlLabel
                     control={<Checkbox 
                     name="checkedA" />}
-                    label="Secondary"
+                    label="Vitamins"
                 />
                 </div>
                 </Grid>
