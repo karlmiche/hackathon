@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import {BrowserRouter as Router, Route, Link, Redirect} from "react-router-dom";
-import Home from './Home';
+import Home from './components/Home';
 import ActivityTracker from './components/ActivityTracker'
 import TaskView from './components/TaskView'
 import Carousel from './components/Carousel.jsx'
