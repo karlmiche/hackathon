@@ -9,7 +9,6 @@ import TaskView from './components/TaskView'
 function App() {
   return (
     <div className="App">
-      our hackathon project!
       <Route exact path='/home' component={Home} />
       <Route path='/activityTracker' component={ActivityTracker} />
       <Route exact path='/tasks' component={TaskView} />
