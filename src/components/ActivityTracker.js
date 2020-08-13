@@ -1,31 +1,73 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './ActivityTracker.css'
 import Button from '@material-ui/core/Button';
-import {BrowserRouter as Router, Route, Link, Redirect} from 'react-router-dom';
+import {BrowserRouter as Link, Redirect, withRouter} from 'react-router-dom';
+import Clock from './ClockIcons/Clock'
+import ClockOverlay from './ClockIcons/ClockOverlay'
+import Section1 from './ClockIcons/Section1'
+import Section2 from './ClockIcons/Section2'
+import Section3 from './ClockIcons/Section3'
+import Section4 from './ClockIcons/Section4'
+import Section5 from './ClockIcons/Section5'
 
-export default function ActivityTracker() {
+
+export default function ActivityTracker(props) {
   
+  const [redirectToTasks, setRedirectToTasks] = useState(false)
+
+  function handleClick() {
+    setRedirectToTasks(true)
+    console.log('handleClick')
+  }
+  if (redirectToTasks) {
+    return (
+    <Redirect to='./tasks' />
+    )
+  }
   return (
+    <div>
+      <h1 className='h1'>My Schedule</h1>
     <div className="papaDiv">
-      <div className="circle1Div">
-        <img className="circleImg" src="./circle1.png" alt="first progress bar" />
+      <div className='clock' >
+        <Clock  />
       </div>
-      <div className="circle2Div">
-        <img className="circleImg" src="./circle2.png" alt="second progress bar" />
-      </div>
-      <div className="circle3Div">
-        <img className="circleImg" src="./circle3.png" alt="third progress bar" />
-      </div>
-      <div className="circle4Div">
-        <img className="circleImg" src="./circle4.png" alt="fourth progress bar" />
-      </div>
-      <Button
-        variant="contained"
-        color="primary"
-        >
-        <Link
-        className='link' to='/tasks'>Check Your Progress</Link>
-        </Button>
+     <div className='clockOverlay'>
+       <ClockOverlay />
+     </div>
+     <div className='section1' onClick={handleClick}>
+       <Section1 />
+     </div>
+     <div className='section2'>
+       <Section2 />
+     </div>
+     <div className='section3'>
+       <Section3 />
+     </div>
+     <div className='section4'>
+       <Section4 />
+     </div>
+     <div className='section5'>
+       <Section5 />
+     </div>
+     <div className='doctorDiv'>
+       <img src='./DoctorFemale.png' />
+     </div>
+     <div className='bag'>
+       <img src='./bag1.png' />
+     </div>
+     <div className='bandage'>
+      <img src='./bandaid1.png' />
+     </div>
+     <div className='needle'>
+      <img src='./Needle.png' />
+     </div>
+     <div className='pills'>
+      <img src='./pills1.png' />
+     </div>
+     <div className='steth'>
+      <img src='./Steth.png' />
+     </div>
+    </div>
     </div>
   )
 }

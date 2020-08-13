@@ -8,7 +8,6 @@ import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles'
 import { ThemeProvider } from '@material-ui/core/styles';
 import TextTransition from './Text'
-
 const useStyles = makeStyles((theme) => ({
 title: {
     paddingTop: "100px",
@@ -34,33 +33,24 @@ tagline: {
     fontSize: "36pt"
 }
 }))
-
 const Home = () => {
 const classes = useStyles()
-
     return (
         <div>
-            <Appbar />
-
             <Grid container spacing={12} className={classes.title}>
                 <Grid item></Grid>
                 <Grid item xs={6}>
-                    <h1 className={classes.tagline}>There's magic in the making...I wonder what I'll be! <TextTransition /></h1>
-                    
-                    
+                    <h1 className={classes.tagline}>There's magic in the making...I wonder what I'll be! <TextTransition /></h1> 
                 </Grid>
                 <Grid item xs={6}>
                     <img src="./DoctorFemale.png" className={classes.picture}/>
                 </Grid>
-                <Button className={classes.button}><Link style={{ textDecoration:"none"}} to="/carousel">Explore</Link></Button>
+                <Button className={classes.button}><Link style={{ textDecoration:"none"}} to="/explore">Explore</Link></Button>
             </Grid>
             <Grid container spacing={12}>
                 
             </Grid>
-
-
         </div>
     );
 };
-
 export default Home;

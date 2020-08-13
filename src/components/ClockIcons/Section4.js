@@ -1,0 +1,23 @@
+import React from 'react'
+
+export default function Section4() {
+  return(
+    <svg width="184" height="314" viewBox="0 0 184 314" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d)">
+<path d="M103.631 288.945C63.5888 255.105 35.1986 209.534 22.4747 158.675C9.75093 107.817 13.3375 54.2456 32.7272 5.53731L125.636 42.5224C114.002 71.7474 111.851 103.89 119.485 134.405C127.119 164.92 144.153 192.263 168.178 212.567L103.631 288.945Z" fill="#5AB190" fill-opacity="0.3"/>
+</g>
+<defs>
+<filter id="filter0_d" x="0" y="0.539062" width="183.178" height="313.407" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+<feOffset dy="10"/>
+<feGaussianBlur stdDeviation="7.5"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.121569 0 0 0 0 0.101961 0 0 0 0 0.227451 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+</defs>
+</svg>
+
+  )
+}

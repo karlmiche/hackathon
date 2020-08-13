@@ -21,8 +21,6 @@ const TEXTS = [
   "Scientist",
   "Teacher",
 ];
-
-
  
 const Text = () => {
   const classes = useStyles()

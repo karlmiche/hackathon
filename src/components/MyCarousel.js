@@ -8,6 +8,7 @@ import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
 import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
+import {BrowserRouter as Router, Route, Link, Redirect} from 'react-router-dom';
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -56,8 +57,10 @@ const tutorialSteps = [
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: 400,
+    maxWidth: 500,
     flexGrow: 1,
+    margin: "0 auto",
+    marginTop: "7vw"
   },
   header: {
     display: 'flex',
@@ -67,12 +70,20 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.default,
   },
   img: {
-    height: 255,
     display: 'block',
-    maxWidth: 400,
     overflow: 'hidden',
     width: '100%',
   },
+  startBtn: {
+    marginTop: "7vw",
+    backgroundColor: "#00B4EB",
+    fontFamily: "Montserrat",
+    color: "white",
+    textDecoration: "none",
+    borderRadius: "25px",
+    height: "4vw",
+    width: "27vw",
+},
 }));
 
 function SwipeableTextMobileStepper() {
@@ -96,7 +107,7 @@ function SwipeableTextMobileStepper() {
   return (
     <div className={classes.root}>
       <Paper square elevation={0} className={classes.header}>
-        <Typography>{tutorialSteps[activeStep].label}</Typography>
+        <Link to="/tasks"><Typography>{tutorialSteps[activeStep].label}</Typography></Link>
       </Paper>
       <AutoPlaySwipeableViews
         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
@@ -130,6 +141,7 @@ function SwipeableTextMobileStepper() {
           </Button>
         }
       />
+      <Button className={classes.startBtn}><Link className="link" to="/tasks">Let's get started!</Link></Button>
     </div>
   );
 }
