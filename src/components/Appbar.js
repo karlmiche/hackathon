@@ -6,6 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+import {BrowserRouter as Router, Route, Link, Redirect} from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
 
@@ -30,15 +31,18 @@ return (
     <div className={classes.root}>
       <AppBar position="static" color="white">
         <Toolbar>
-          <IconButton edge="start" className={classes.menuButton} color="primary" aria-label="menu">
-            <MenuIcon />
+          {/* <IconButton edge="start" className={classes.menuButton} color="primary" aria-label="menu"> */}
+            {/* <MenuIcon /> */}
             <img src="./logo.png"></img>
-          </IconButton>
+            <h1>Wheel of Life</h1>
+          {/* </IconButton> */}
           <Typography variant="h6" className={classes.title}>
-            
           </Typography>
+          <Button color="black"><Link style={{ textDecoration:"none"}} to="/carousel">Explore Jobs</Link></Button>
+          <Button color="black"><Link style={{ textDecoration:"none"}} to="/activitytracker">My Schedule</Link></Button>
           <Button color="black">Log in</Button>
           <Button color="black">Sign Up</Button>
+          
         </Toolbar>
       </AppBar>
     </div>
