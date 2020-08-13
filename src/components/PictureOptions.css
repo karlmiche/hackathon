@@ -1,0 +1,25 @@
+/* .options-container {
+    display: grid;
+    grid-template-rows: 500px 500px;
+    grid-template-columns: 50px 50px 50px 50px;
+}
+
+.bandage {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.bone {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.drug {
+    grid-row: 1;
+    grid-column: 3;
+}
+
+.drug-two {
+    grid-row: 1;
+    grid-column: 4;
+} */
