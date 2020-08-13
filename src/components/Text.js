@@ -19,10 +19,8 @@ const TEXTS = [
   "Nurse",
   "Police",
   "Scientist",
-  "Teacher"
+  "Teacher",
 ];
-
-
  
 const Text = () => {
   const classes = useStyles()
