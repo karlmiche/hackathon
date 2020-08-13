@@ -18,7 +18,8 @@ const useStyles = makeStyles((theme) => ({
       color: theme.palette.text.secondary,
     },
     anya: {
-        textAlign: "center"
+        textAlign: "left",
+        marginLeft: "100px"
     }
   }));
 
@@ -31,7 +32,7 @@ const TaskView = () => {
             <Grid container spacing={3}>
                 <Grid item xs={12}></Grid>
                 <Grid item xs={8}></Grid>
-                <Typography className={classes.anya} variant="h4">Good Afternoon, Dr. Anya. Your patient Charlie is here to see you. First, let’s get ready to take care of Charlie.</Typography>
+                <Typography className={classes.anya} variant="h5">Good Afternoon, Dr. Anya. Your patient Charlie is here to see you. First, let’s get ready to take care of Charlie.</Typography>
                 <Grid item xs={12}></Grid>
                 <Grid item xs={6}>
                     <Typography variant="h5">Task 1: Charlie has a broken leg. What should you put in your doctor’s bag?</Typography>
@@ -44,16 +45,18 @@ const TaskView = () => {
                         </div>
                     </Card>
                 </Grid>
-                {/* <Typography variant="h5">Check off tasks to mark your progress!</Typography> */}  
+                {/* <Typography variant="h5">Check off tasks to mark your progress!</Typography> */}
+                <Grid item xs={6}>
+                    <PictureOptions />
+                    <Button 
+                        variant="contained" 
+                        color="secondary" 
+                        >
+                        <Link 
+                        className='link' to='/home'>Take Care of Patient</Link>
+                    </Button>
+                </Grid>
             </Grid>
-            <PictureOptions />
-            <Button 
-                variant="contained" 
-                color="secondary" 
-                >
-                <Link 
-                className='link' to='/home'>I'm Done!</Link>
-            </Button>
         </div>
     );
 };

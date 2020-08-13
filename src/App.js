@@ -13,7 +13,7 @@ function App() {
       <Route exact path='/home' component={Home} />
       <Route path='/activityTracker' component={ActivityTracker} />
       <Route exact path='/tasks' component={TaskView} />
-      <Route path="/carousel" component={MyCarousel} />
+      <Route exact path="/carousel" component={MyCarousel} />
     </div>
   );
 }
