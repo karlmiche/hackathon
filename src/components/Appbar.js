@@ -38,7 +38,7 @@ return (
           {/* </IconButton> */}
           <Typography variant="h6" className={classes.title}>
           </Typography>
-          <Button color="black"><Link style={{ textDecoration:"none"}} to="/carousel">Explore Jobs</Link></Button>
+          <Button color="black"><Link style={{ textDecoration:"none"}} to="/explore">Explore Jobs</Link></Button>
           <Button color="black"><Link style={{ textDecoration:"none"}} to="/activitytracker">My Schedule</Link></Button>
           <Button color="black">Log in</Button>
           <Button color="black">Sign Up</Button>
