@@ -24,8 +24,9 @@ export default function ActivityTracker(props) {
     )
   }
   return (
-    <div className="papaDiv">
+    <div>
       <h1>My Schedule</h1>
+    <div className="papaDiv">
       <div className='clock' onClick={handleClick}>
         <Clock  />
       </div>
@@ -47,6 +48,10 @@ export default function ActivityTracker(props) {
      <div className='section5'>
        <Section5 />
      </div>
+     <div className='doctorDiv'>
+       <img src='./DoctorFemale.png' />
+     </div>
+    </div>
     </div>
   )
 }
