@@ -1,30 +1,75 @@
 .papaDiv {
   display: grid;
-  grid-template-rows: 250px 250px 250px; 
-  grid-template-columns: 250px 250px 250px;
-  margin: 200px;
+  grid-template-rows: 100px 100px 100px 100px 100px 100px; 
+  grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;  
+  align-items: center;
+  justify-content: center;
+  margin: 100px 0;
+  
 }
 
-.circle1Div {
-  grid-column: 3;
-  grid-row: 1;
+.clock {
+  grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row-start: 1;
+    grid-row-end: 7;
 }
 
-.circle2Div {
-  grid-column: 3;
-  grid-row: 2;
+.clockOverlay {
+  grid-column-start: 3;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 7;
+    position: relative;
+    top: 7px;
 }
 
-.circle3Div {
-  grid-column: 2;
-  grid-row: 2;
+.section1 {
+  grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    position: relative;
+    top: 37px;
+    right: 55px;
 }
 
-.circle4Div {
-  grid-column: 2;
-  grid-row: 1;
+.section2 {
+  grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    position: relative;
+    left: 24px;
+    top: 5px;
 }
 
-.circleImg:hover {
-  width: 100%;
+.section3 {
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 5;
+  grid-row-end: 7;
+  position: relative;
+  bottom: 7px;
+  left: 30px;
+}
+
+.section4 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 6;
+  position: relative;
+  top: 6px;
+  left: 30px;
+}
+
+.section5 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  position: relative;
+  top: 51px;
+  left: 54px;
 }
