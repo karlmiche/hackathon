@@ -77,7 +77,7 @@ const TaskView = () => {
                     <PictureOptions />
                     <Button>
                         <Link 
-                        className={classes.patientBtn} to='/home'>Take Care of Patient</Link>
+                        className={classes.patientBtn} to='/activityTracker'>Take Care of Patient</Link>
                     </Button>
                 </Grid>
             </Grid>
